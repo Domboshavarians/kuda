@@ -72,7 +72,7 @@ gulp.task('img', function(){
         imageMin.jpegtran(),
         imageMin.optipng(),
         imageMin.svgo(),
-        pngQuint(),
+        pngquant(),
         jpgRecompress()
     ]))
     .pipe(gulp.dest(paths.dist.imgs));
